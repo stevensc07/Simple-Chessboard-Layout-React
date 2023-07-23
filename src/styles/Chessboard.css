@@ -1,18 +1,21 @@
 .chessboard {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(9, 50px); /* Agregamos una columna adicional para las letras */
-    grid-template-rows: repeat(9, 50px); /* Agregamos una fila adicional para los números */
-  }
-  
-  .labels-row {
     display: grid;
     grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(9, 50px);
+    position: relative;
   }
   
   .labels-column {
     display: grid;
     grid-template-rows: repeat(8, 50px);
+    transform: translateY(100%); /* Agregamos un desplazamiento hacia arriba para alinear correctamente las etiquetas */
+  }
+  .labels-row {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    position: absolute;transform: translateY(100%);
+    top: -50px;
+    left: 0;
   }
   
   .label {
@@ -22,10 +25,14 @@
     font-size: 18px;
   }
   
+  .chessboard-container {
+    position: relative;
+    margin-top: 50px; /* Agregamos un margen superior para evitar que las letras se superpongan al tablero */
+  }
+  
   .chessboard-grid {
     display: grid;
     grid-template-columns: repeat(8, 50px);
-    
   }
   
   .square {
@@ -41,5 +48,15 @@
     background-color: #b58863;
   }
   
+  /* Estilo para los números en la columna */
+  .labels-column > .label {
+    grid-row: span 1;
+    grid-column: 1;
+  }
   
- 
+  /* Estilo para las letras en la fila */
+  .labels-row > .label {
+    grid-row: 1;
+    grid-column: span 1;
+  }
+  

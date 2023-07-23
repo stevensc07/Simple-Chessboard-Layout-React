@@ -23,25 +23,26 @@ const Chessboard = () => {
 
   return (
     <div className="chessboard">
-      <div className="labels-row">
-        {columns.map((col) => (
-          <div key={col} className="label">
-            {col}
-          </div>
-        ))}
-      </div>
-      <div className="chessboard-grid">
-        {renderSquares()}
-      </div>
       <div className="labels-column">
-        {rows.map((row) => (
+        {rows.map((row, index) => (
           <div key={row} className="label">
-            {row}
+            {rows[7 - index]} {/* Corregimos el orden para que coincida con los cuadros */}
           </div>
         ))}
+      </div>
+      <div className="chessboard-container">
+        <div className="labels-row">
+          {columns.map((col) => (
+            <div key={col} className="label">
+              {col}
+            </div>
+          ))}
+        </div>
+        <div className="chessboard-grid">{renderSquares()}</div>
       </div>
     </div>
   );
 };
 
 export default Chessboard;
+
