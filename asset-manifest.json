@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stevensc07/Simple-Chessboard-Layout-React/static/css/main.9aa76c47.css",
+    "main.js": "/stevensc07/Simple-Chessboard-Layout-React/static/js/main.90979a28.js",
+    "static/js/787.fff2b808.chunk.js": "/stevensc07/Simple-Chessboard-Layout-React/static/js/787.fff2b808.chunk.js",
+    "index.html": "/stevensc07/Simple-Chessboard-Layout-React/index.html",
+    "main.9aa76c47.css.map": "/stevensc07/Simple-Chessboard-Layout-React/static/css/main.9aa76c47.css.map",
+    "main.90979a28.js.map": "/stevensc07/Simple-Chessboard-Layout-React/static/js/main.90979a28.js.map",
+    "787.fff2b808.chunk.js.map": "/stevensc07/Simple-Chessboard-Layout-React/static/js/787.fff2b808.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9aa76c47.css",
+    "static/js/main.90979a28.js"
+  ]
+}
